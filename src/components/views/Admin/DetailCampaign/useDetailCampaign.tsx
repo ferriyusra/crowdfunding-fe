@@ -48,7 +48,7 @@ const useDetailCampaign = () => {
   });
 
   const handleUpdateCampaign = (data: ICampaign) => mutateUpdateCampaign(data);
-  console.log('handleUpdateCampaign', handleUpdateCampaign)
+
   const handleUpdateInfo = (data: ICampaignForm) => {
     const payload = {
       ...data,

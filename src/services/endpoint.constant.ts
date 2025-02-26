@@ -3,7 +3,7 @@ const endpoint = {
 	CATEGORY: '/category',
 	CAMPAIGN: '/campaign',
 	MEDIA: '/media',
-	ORDERS: '/orders',
+	DONATION: '/donation',
 };
 
 export default endpoint;

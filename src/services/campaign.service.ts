@@ -3,6 +3,7 @@ import endpoint from './endpoint.constant';
 import { ICampaign } from '@/types/Campaign';
 
 const campaignService = {
+	// for crm
 	getCampaigns: (params?: string) =>
 		instance.get(`${endpoint.CAMPAIGN}?${params}`),
 	getCampaignById: (id: string) => instance.get(`${endpoint.CAMPAIGN}/${id}`),
@@ -13,6 +14,12 @@ const campaignService = {
 	deleteCampaign: (id: string) => instance.delete(`${endpoint.CAMPAIGN}/${id}`),
 	updateCampaign: (id: string, payload: ICampaign) =>
 		instance.put(`${endpoint.CAMPAIGN}/${id}`, payload),
+
+	// for users show
+	getCampaignsAndStatusApproved: (params?: string) =>
+		instance.get(`${endpoint.CAMPAIGN}-approved?${params}`),
+	getCampaignByIdAndStatusApproved: (id: string) =>
+		instance.get(`${endpoint.CAMPAIGN}-approved/${id}`),
 };
 
 export default campaignService;

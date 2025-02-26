@@ -26,7 +26,7 @@ const useLandingPageLayoutNavbar = () => {
 
   const getCampaignsSearch = async () => {
     const params = `search=${search}limit=${LIMIT_EVENT}&page=${PAGE_DEFAULT}`;
-    const res = await campaignService.getCampaigns(params);
+    const res = await campaignService.getCampaignsAndStatusApproved(params);
     const { data } = res;
     return data;
   };
