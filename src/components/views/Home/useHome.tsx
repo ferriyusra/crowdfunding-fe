@@ -34,7 +34,7 @@ const useHome = () => {
   });
 
   const getCampaigns = async (params: string) => {
-    const res = await campaignService.getCampaigns(params);
+    const res = await campaignService.getCampaignsAndStatusApproved(params);
     const { data } = res;
     return data;
   };

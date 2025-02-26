@@ -104,6 +104,7 @@ const HomeCampaignList = (props: PropTypes) => {
                 campaigns.map(campaign => (
                   <SwiperSlide key={`card-campaign-${campaign._id}`} className="mb-6 md:mb-0">
                     <CardCampaign
+                      key={`card-key-${campaign._id}`}
                       campaign={campaign}
                       className="first:ml-6 last:mr-6 lg:first:ml-0 lg:last:mr-0"
                     />
