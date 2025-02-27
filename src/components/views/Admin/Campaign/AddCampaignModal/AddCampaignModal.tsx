@@ -149,7 +149,7 @@ const AddCampaignModal = (props: PropTypes) => {
                   render={({ field }) => (
                     <DatePicker
                       {...field}
-                      label="Tanggal Mulai Acara"
+                      label="Tanggal Akhir Penggalangan Dana"
                       labelPlacement="outside"
                       variant="bordered"
                       isInvalid={errors.deadline !== undefined}
