@@ -14,7 +14,7 @@ interface PropTypes {
 const HomeSlider = (props: PropTypes) => {
   const { banners, isLoadingBanners } = props;
   return (
-    <div className="mx-6 mb-6 h-[25vw] lg:mx-0 lg:mb-16">
+    <div className="mx-6 mb-6 h-[50vw] sm:h-[40vw] md:h-[30vw] lg:mx-0 lg:mb-16 lg:h-[25vw]">
       {!isLoadingBanners ? (
         <Swiper
           pagination={{
@@ -37,13 +37,13 @@ const HomeSlider = (props: PropTypes) => {
                 alt={`${banner.title}`}
                 width={1920}
                 height={1080}
-                className="h-[80%] w-full rounded-2xl object-cover lg:h-[90%]"
+                className="h-[60%] sm:h-[70%] md:h-[80%] lg:h-[90%] w-full rounded-2xl object-cover"
               />
             </SwiperSlide>
           ))}
         </Swiper>
       ) : (
-        <Skeleton className="h-[90%] rounded-2xl w-full" />
+        <Skeleton className="h-[60%] sm:h-[70%] md:h-[80%] lg:h-[90%] rounded-2xl w-full" />
       )}
     </div>
   )

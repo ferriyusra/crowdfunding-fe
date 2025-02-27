@@ -2,6 +2,7 @@ import HomeCategoryList from "./HomeCategoryList";
 import HomeCampaignList from "./HomeCampaignList";
 import HomeSlider from "./HomeSlider";
 import useHome from "./useHome";
+import HomeSectionWelcome from "./HomeSectionWelcome";
 
 const Home = () => {
   const {
@@ -14,9 +15,7 @@ const Home = () => {
   } = useHome();
   return (
     <div>
-      <HomeSlider
-        banners={[]}
-        isLoadingBanners={isLoadingBanners}
+      <HomeSectionWelcome
       />
       <HomeCampaignList
         title="Donasi Terbaru"

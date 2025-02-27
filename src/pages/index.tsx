@@ -3,7 +3,7 @@ import Home from "@/components/views/Home";
 
 const HomePage = () => {
   return (
-    <LandingPageLayout title="Home">
+    <LandingPageLayout title="Berbagi - Donasi">
       <Home />
     </LandingPageLayout>
   );

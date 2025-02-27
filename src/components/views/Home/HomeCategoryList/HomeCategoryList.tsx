@@ -16,7 +16,7 @@ const HomeCategoryList = (props: PropTypes) => {
         <h1 className="text-2xl font-bold text-teal-700">Pilih Kategori Favoritmu</h1>
       </CardHeader>
       <CardBody className="mt-4 p-0">
-        <div className="grid auto-cols-[8rem] grid-flow-col gap-4 overflow-x-auto lg:grid-cols-8">
+        <div className="grid auto-cols-[8rem] grid-flow-col gap-4 overflow-x-auto sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-8">
           {!isLoading
             ? categories?.map((category) => (
               <Link

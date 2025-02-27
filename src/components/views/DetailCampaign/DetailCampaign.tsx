@@ -78,10 +78,12 @@ const DetailEvent = () => {
                 Cerita Penggalangan Dana
               </h2>
               <Skeleton
-                className="mt-2 h-32 w-full rounded-lg"
+                className="mt-2 h-32 w-full rounded-lg md:h-48 lg:h-64"
                 isLoaded={!!dataCampaign?.description}
               >
-                <p className="text-foreground-500">{dataCampaign?.description}</p>
+                <p className="text-foreground-500 text-sm md:text-base lg:text-lg">
+                  {dataCampaign?.description}
+                </p>
               </Skeleton>
             </Tab>
             <Tab key="Donasi" title="Donasi">

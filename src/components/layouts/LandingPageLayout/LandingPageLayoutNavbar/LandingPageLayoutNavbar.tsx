@@ -41,20 +41,6 @@ const LandingPageLayoutNavbar = () => {
     search,
     setSearch,
   } = useLandingPageLayoutNavbar();
-  // const [isScrolled, setIsScrolled] = useState(false);
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     if (window.scrollY > 50) {
-  //       setIsScrolled(true);
-  //     } else {
-  //       setIsScrolled(false);
-  //     }
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, []);
 
   return (
     <Navbar
@@ -62,12 +48,8 @@ const LandingPageLayoutNavbar = () => {
       isBordered={false}
       isBlurred={false}
       shouldHideOnScroll
-    // className={cn(
-    //   "transition-all duration-300 z-50 my-2",
-    //   isScrolled ? "bg-white/95 backdrop-blur-md shadow-md" : "bg-transparent"
-    // )}
     >
-      <div className="container mx-auto px-4 flex items-center justify-between w-full">
+      <div className="mx-auto px-4 flex items-center justify-between w-full">
         <div className="flex items-center gap-8">
           <NavbarBrand as={Link} href="/">
             <Image
@@ -250,7 +232,7 @@ const LandingPageLayoutNavbar = () => {
                 <NavbarMenuItem className="my-1">
                   <Link
                     className="block py-2 px-4 rounded-lg transition-colors font-medium text-default-700 hover:text-danger hover:bg-red-50"
-                    href="/member/profile"
+                    href="/fundraising/profile"
                   >
                     Profile
                   </Link>
