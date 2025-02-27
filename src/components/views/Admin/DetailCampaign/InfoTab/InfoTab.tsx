@@ -183,16 +183,16 @@ const InfoTab = (props: PropTypes) => {
                   ]}
                   disabledKeys={dataCampaign?.status === "rejected" ? ["approved", "pending", "completed"] : []}
                 >
-                  <SelectItem key="approved" value="approved" >
+                  <SelectItem key="approved">
                     Disetujui
                   </SelectItem>
-                  <SelectItem key="rejected" value="rejected">
+                  <SelectItem key="rejected">
                     Ditolak
                   </SelectItem>
-                  <SelectItem key="pending" value="pending">
+                  <SelectItem key="pending">
                     Pending
                   </SelectItem>
-                  <SelectItem key="completed" value="completed">
+                  <SelectItem key="completed">
                     Selesai
                   </SelectItem>
                 </Select>
