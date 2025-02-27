@@ -98,7 +98,7 @@ const DataTable = (props: PropTypes) => {
             startContent={<p className="text-small">Tampilkan:</p>}
           >
             {LIMIT_LISTS.map((item) => (
-              <SelectItem key={item.value} value={item.value}>
+              <SelectItem key={item.value}>
                 {item.label}
               </SelectItem>
             ))}
