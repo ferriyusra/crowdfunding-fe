@@ -35,7 +35,7 @@ const Payment = () => {
         />
       </div>
       <div className="flex flex-col items-center gap-2 text-center">
-        <h1 className="text-3xl font-bold capitalize text-danger-500">
+        <h1 className="text-3xl font-bold capitalize text-teal-600">
           Transaction {status}
         </h1>
       </div>
