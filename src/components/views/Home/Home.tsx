@@ -6,8 +6,6 @@ import HomeSectionWelcome from "./HomeSectionWelcome";
 
 const Home = () => {
   const {
-    dataBanners,
-    isLoadingBanners,
     dataFeaturedCampaigns,
     isLoadingFeaturedCampaigns,
     dataCategories,
