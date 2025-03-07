@@ -12,7 +12,7 @@ const useCampaign = () => {
   } = useChangeUrl();
 
   const getCampaigns = async () => {
-    let params = `limit=${currentLimit}&page=${currentPage}`;
+    let params = `limit=${currentLimit}&page=${currentPage}&category=${currentCategory}`;
     const res = await campaignService.getCampaigns(params);
     const { data } = res;
 

@@ -51,7 +51,15 @@ const CardCampaign = (props: PropTypes) => {
             <div className="flex flex-col gap-6 w-full max-w-md mb-2">
               <Progress aria-label={`progress-${campaign?.name}`} color="warning" value={campaign?.progressValue} />
             </div>
-            <p className="text-foreground-500">{convertTime(`${campaign?.deadline}`)}</p>
+            <p className="text-foreground-500 text-sm md:text-base">
+              {(() => {
+                const deadline = new Date(campaign?.deadline || '');
+                const now = new Date();
+                const diffTime = Math.max(deadline.getTime() - now.getTime(), 0);
+                const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+                return `${diffDays} hari lagi`;
+              })()}
+            </p>
           </CardFooter>
 
         </Fragment>
